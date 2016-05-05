@@ -8,7 +8,7 @@
  * Time: 15:23
  */
 
-$xml = simplexml_load_file("http://www.bayildim.com/index.php?do=catalog/output&pCode=5444632724") or die("Error: Cannot create object");
+$xml = simplexml_load_file("http://www.siteadresi.com/index.php?do=catalog/output&pCode=xxxxx") or die("Error: Cannot create object");
 $result = $xml->xpath("item/rootProductId[.='0']/parent::*");
 
 $xml_yaz = new SimpleXMLElement('<xml/>');

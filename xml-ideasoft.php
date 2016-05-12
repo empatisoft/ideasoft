@@ -16,7 +16,7 @@ $xml_yaz = new SimpleXMLElement('<xml/>');
 foreach($result as $n) {
     $track = $xml_yaz->addChild('item');
     $track->addChild('id', $n->id);
-    $track->addChild('Name', "<![CDATA['$n->Name']]>");
+    $track->addChild('Name', "<![CDATA['.$n->Name.']]>");
     $track->addChild('rootlabel', '<![CDATA['.$n->rootlabel.']]>');
     $track->addChild('status', $n->status);
     $track->addChild('brand', '<![CDATA['.$n->brand.']]>');
